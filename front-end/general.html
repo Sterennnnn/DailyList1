@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Gestion de Tâches</title>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="user-info">
+            <img src="user-logo.png" alt="Logo Utilisateur" class="user-logo">
+            <p class="user-name">Nom de l'Utilisateur</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">Tableau de bord</a></li>
+                <li><a href="#">Diagramme de progression</a></li>
+                <li><a href="#">Ajouter des tâches</a></li>
+                <li><a href="#">Ajouter des collaborateurs</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <img src="app-logo.png" alt="Logo App" class="app-logo">
+            </div>
+            <div class="header-right">
+                <ul class="header-icons">
+                    <li><img src="images/notification.png" alt="Notifications"></li>
+                    <li><img src="images/update.png" alt="Mises à jour"></li>
+                    <li><img src="images/invite.png" alt="Inviter des utilisateurs"></li>
+                    <li><img src="images/user_profile.png" alt="Profil Utilisateur"></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Dynamic Content -->
+        <section class="home-page">
+            <h1>Bienvenue sur votre tableau de bord</h1>
+            <div class="overview">
+                <div class="task-status">
+                    <h2>Progression</h2>
+                    <canvas id="progressChart"></canvas> <!-- Graphique circulaire -->
+                </div>
+                <div class="task-summary">
+                    <h2>Tâches à faire</h2>
+                    <ul>
+                        <li>Tâche 1</li>
+                        <li>Tâche 2</li>
+                        <li>Tâche 3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Header */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.app-logo {
+    height: 50px;
+}
+
+.header-right .header-icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-logo {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.task-overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-section {
+    width: 48%;
+}
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.task-table th,
+.task-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.status.ongoing {
+    background-color: #ffc107;
+}
+
+.status.not-started {
+    background-color: #dc3545;
+}
+
+.status.completed {
+    background-color: #28a745;
+}
+
+.add-task {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.add-task button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
