@@ -1,34 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application de Gestion de Tâches</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application de Gestion de Tâches</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
+<body>
     <!-- Header -->
-    <header class="app-header">
-        <div class="header-left">
-            <img src="logo.png" alt="Logo" class="app-logo">
-        </div>
-        <div class="header-right">
-            <img src="images/notification.png" alt="Notifications" class="header-icon">
-            <img src="images/comment.png" alt="Commentaires" class="header-icon">
-            <img src="images/update.png" alt="Mise à jour" class="header-icon">
-            <img src="images/user_profile.png" alt="Profil utilisateur" class="header-icon profile-icon">
-            <button class="logout-btn">Déconnexion</button>
-        </div>
-    </header>
 
     <div class="main-container">
         <!-- Sidebar -->
@@ -38,69 +19,89 @@
                 <h2>Nom d'utilisateur</h2>
             </div>
             <ul class="nav">
-                <li class="nav-item"><a href="#">🏠 Accueil</a></li>
-                <li class="nav-item"><a href="#">📊 Tableau de bord</a></li>
+                <li class="nav-item"><a href="accueil.html">🏠 Accueil</a></li>
+                <li class="nav-item"><a href="general.html">📊 Tableau de bord</a></li>
                 <li class="nav-item"><a href="#">📅 Calendrier</a></li>
                 <li class="nav-item"><a href="#">👥 Ajouter des collaborateurs</a></li>
             </ul>
+
             <div class="add-task">
                 <button>+ Ajouter une tâche</button>
             </div>
+            <ul class="nav logout-btn textcenter">
+                <li class="nav-item textcenter"><a href="login.html">Déconnexion</a></li>
+            </ul>
         </div>
-
-        <!-- Main Content -->
         <div class="main-content">
-            <h2>Vue d'ensemble des tâches</h2>
-
-            <div class="task-overview">
-                <div class="task-section">
-                    <h3>Tâches de la journée</h3>
-                    <table class="task-table">
-                        <thead>
-                            <tr>
-                                <th>Tâche</th>
-                                <th>Responsable</th>
-                                <th>Statut</th>
-                                <th>Échéance</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Exemple de tâches de la journée -->
-                            <tr>
-                                <td>Finaliser le design du site</td>
-                                <td>Jean Dupont</td>
-                                <td><span class="status ongoing">En cours</span></td>
-                                <td>23/10/2024</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <img src="\front-end\images\logo.png" alt="Logo App" class="app-logo">
                 </div>
+                <div class="header-right">
+                    <ul class="header-icons">
+                        <li><img src="images/notification.png" alt="Notifications"></li>
+                        <li><img src="images/update.png" alt="Mises à jour"></li>
+                        <li><img src="images/invite.png" alt="Inviter des utilisateurs"></li>
+                        <li><img src="images/user_profile.png" alt="Profil Utilisateur"></li>
+                    </ul>
+                </div>
+            </header>
 
-                <div class="task-section">
-                    <h3>Tâches du lendemain</h3>
-                    <table class="task-table">
-                        <thead>
-                            <tr>
-                                <th>Tâche</th>
-                                <th>Responsable</th>
-                                <th>Statut</th>
-                                <th>Échéance</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Exemple de tâches du lendemain -->
-                            <tr>
-                                <td>Préparer la réunion avec les clients</td>
-                                <td>Marie Durand</td>
-                                <td><span class="status not-started">A faire</span></td>
-                                <td>24/10/2024</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Main Content -->
+            <div class="main-content">
+                <h2>Vue d'ensemble des tâches</h2>
+                <div class="task-overview">
+                    <div class="task-section">
+                        <h3>Tâches de la journée</h3>
+                        <table class="task-table">
+                            <thead>
+                                <tr>
+                                    <th>Tâche</th>
+                                    <th>Responsable</th>
+                                    <th>Statut</th>
+                                    <th>Échéance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Exemple de tâches de la journée -->
+                                <tr>
+                                    <td>Finaliser le design du site</td>
+                                    <td>Jean Dupont</td>
+                                    <td><span class="status ongoing">En cours</span></td>
+                                    <td>23/10/2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="task-section">
+                        <h3>Tâches à venir</h3>
+                        <table class="task-table">
+                            <thead>
+                                <tr>
+                                    <th>Tâche</th>
+                                    <th>Responsable</th>
+                                    <th>Statut</th>
+                                    <th>Échéance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Exemple de tâches du lendemain -->
+                                <tr>
+                                    <td>Préparer la réunion avec les clients</td>
+                                    <td>Marie Durand</td>
+                                    <td><span class="status not-started">À faire</span></td>
+                                    <td>24/10/2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="accueil.js"></script>
+
+        <script src="accueil.js"></script>
 </body>
+
 </html>
