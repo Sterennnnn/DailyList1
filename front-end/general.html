@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application de Gestion de Tâches</title>
-    <link rel="stylesheet" href="styles/style1.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <div class="sidebar">
         <div class="user-info">
-            <img src="user-logo.png" alt="Logo Utilisateur" class="user-logo">
-            <p class="user-name">Nom de l'Utilisateur</p>
+            <img src="images/user_profile.png" alt="Logo utilisateur" class="user-logo">
+            <h2>Nom d'utilisateur</h2>
         </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#" class="active">Accueil</a></li>
-                <li><a href="#">Tableau de bord</a></li>
-                <li><a href="#">Diagramme de progression</a></li>
-                <li><a href="#">Ajouter des tâches</a></li>
-                <li><a href="#">Ajouter des collaborateurs</a></li>
-            </ul>
-        </nav>
-    </aside>
+        <ul class="nav">
+            <li class="nav-item"><a href="accueil.html">🏠 Accueil</a></li>
+            <li class="nav-item"><a href="general.html">📊 Tableau de bord</a></li>
+            <li class="nav-item"><a href="#">📅 Calendrier</a></li>
+            <li class="nav-item"><a href="#">👥 Ajouter des collaborateurs</a></li>
+    
+        <div class="add-task">
+            <button>+ Ajouter une tâche</button>
+        </div>
+        <div class="logout-section">
+            <button class="logout-btn">Déconnexion</button>
+        </div>
+    </div>
 
     <!-- Main content -->
     <div class="main-content">
         <!-- Header -->
         <header class="header">
             <div class="header-left">
-                <img src="app-logo.png" alt="Logo App" class="app-logo">
+                <img src="\front-end\images\logo.png" alt="Logo App" class="app-logo">
             </div>
             <div class="header-right">
                 <ul class="header-icons">
@@ -63,4 +68,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
