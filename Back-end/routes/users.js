@@ -14,11 +14,14 @@ db.connect((err) => {
     }
 });
 
+const cors = require('cors');
+app.use(cors());
 
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const port = process.env.PORT || 3000;
 require('dotenv').config();
 
 // Inscription d'un utilisateur
@@ -69,3 +72,8 @@ router.post('/login', (req, res) => {
 });
 
 module.exports = router;
+
+// Démarrer le serveur
+app.listen(port, () => {
+    console.log(`L'API fonctionne sur le port ${port}`);
+});
